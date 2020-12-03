@@ -30,42 +30,38 @@ export default {
       step2: false,
       step3: false,
       step4: false,
-      width: 0
+      width: 5
     }
   },
   methods: {
     nextStep() {
       if (this.index < 4) {
         this.index++
+        this.width += 30
       }
       if(this.index == 2) {
         this.step2 = true
-        this.width = 35
       }
       else if(this.index == 3) {
         this.step3 = true
-        this.width = 65
       }
       else if (this.index == 4) {
         this.step4 = true
-        this.width = 100
       }
     },
     prevStep() {
       if(this.index == 2) {
         this.step2 = false
-        this.width = 0
       }
       else if(this.index == 3) {
         this.step3 = false
-        this.width = 35
       }
       else if (this.index == 4) {
         this.step4 = false
-        this.width = 65
       }
       if (this.index > 1) {
         this.index--
+        this.width -= 30
       }
     }
   },
@@ -113,7 +109,7 @@ export default {
   }
   .bar {
     position: absolute;
-    width: 0%;
+    width: 5%;
     height: 100%;
     background-color: #3498db;
     transition: 0.4s ease;
