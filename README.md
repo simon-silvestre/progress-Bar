@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> Petit projet pour afficher des cards dynamiquement avec une barre de chargement.
+> Petit projet de progress bar.
 
 ### ✨ [Essayez par vous-même](http://progress-bar.simon-projets.com)
 
