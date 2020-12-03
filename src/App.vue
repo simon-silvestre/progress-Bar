@@ -152,4 +152,9 @@ export default {
   .bouton:active {
     transform: scale(0.96);
   }
+  @media screen and (max-width: 370px) {
+    .progressBar {
+      width: 280px;
+    }
+  }
 </style>
